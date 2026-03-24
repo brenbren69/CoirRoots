@@ -55,6 +55,11 @@ try {
     }
     echo "✓ Seed data inserted ($count statements executed)\n\n";
 
+    // Fix image paths — replace absolute localhost URLs with relative paths
+    echo "Fixing product image paths...\n";
+    $fixed = $pdo->exec("UPDATE products SET image = REPLACE(image, 'http://localhost/Coir-Roots/', '') WHERE image LIKE 'http://localhost%'");
+    echo "✓ Fixed $fixed product image path(s)\n\n";
+
     // Create admin user
     echo "Creating admin user...\n";
     $hash = password_hash('Admin@123', PASSWORD_DEFAULT);

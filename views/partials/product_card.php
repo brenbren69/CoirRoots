@@ -2,7 +2,13 @@
 <div class="product-card h-100">
     <div class="product-img-wrap">
         <a href="<?php echo APP_URL; ?>/index.php?page=product&slug=<?php echo e($prod['slug']); ?>">
-            <img src="<?php echo e($prod['image'] ?: 'https://placehold.co/600x400/5C3D1E/F5ECD7?text=Product'); ?>"
+            <?php
+                $imgSrc = $prod['image'] ?: 'https://placehold.co/600x400/5C3D1E/F5ECD7?text=Product';
+                if ($imgSrc && !str_starts_with($imgSrc, 'http') && !str_starts_with($imgSrc, '/')) {
+                    $imgSrc = APP_URL . '/' . $imgSrc;
+                }
+            ?>
+            <img src="<?php echo e($imgSrc); ?>"
                  alt="<?php echo e($prod['name']); ?>"
                  class="product-img" loading="lazy">
         </a>

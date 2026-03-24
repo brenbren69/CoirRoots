@@ -23,7 +23,13 @@
         <!-- Product Image -->
         <div class="col-lg-6">
             <div class="product-detail-img-wrap rounded-4 overflow-hidden shadow-sm">
-                <img src="<?php echo e($product['image'] ?: 'https://placehold.co/600x400/5C3D1E/F5ECD7?text=Product'); ?>"
+                <?php
+                    $detailImgSrc = $product['image'] ?: 'https://placehold.co/600x400/5C3D1E/F5ECD7?text=Product';
+                    if ($detailImgSrc && !str_starts_with($detailImgSrc, 'http') && !str_starts_with($detailImgSrc, '/')) {
+                        $detailImgSrc = APP_URL . '/' . $detailImgSrc;
+                    }
+                ?>
+                <img src="<?php echo e($detailImgSrc); ?>"
                      alt="<?php echo e($product['name']); ?>"
                      class="img-fluid w-100"
                      style="object-fit: cover; max-height: 480px;"
