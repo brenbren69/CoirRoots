@@ -17,10 +17,14 @@ try {
     $statements = array_filter(array_map('trim', explode(';', $schema)));
     $count = 0;
     foreach ($statements as $stmt) {
-        if (!empty($stmt) && !str_starts_with(ltrim($stmt), '--')) {
-            $pdo->exec($stmt);
-            $count++;
-        }
+        $trimmed = ltrim($stmt);
+        // Skip USE and CREATE DATABASE — Railway already has the DB selected
+        if (empty($trimmed)) continue;
+        if (str_starts_with($trimmed, '--')) continue;
+        if (stripos($trimmed, 'USE ') === 0) continue;
+        if (stripos($trimmed, 'CREATE DATABASE') === 0) continue;
+        $pdo->exec($stmt);
+        $count++;
     }
     echo "✓ Schema created ($count statements executed)\n\n";
 
@@ -30,7 +34,11 @@ try {
     $statements = array_filter(array_map('trim', explode(';', $seed)));
     $count = 0;
     foreach ($statements as $stmt) {
-        if (!empty($stmt) && !str_starts_with(ltrim($stmt), '--')) {
+        $trimmed = ltrim($stmt);
+        if (empty($trimmed)) continue;
+        if (str_starts_with($trimmed, '--')) continue;
+        if (stripos($trimmed, 'USE ') === 0) continue;
+        if (!empty($trimmed)) {
             try {
                 $pdo->exec($stmt);
                 $count++;
