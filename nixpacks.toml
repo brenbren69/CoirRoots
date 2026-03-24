@@ -1,3 +1,6 @@
+[phases.setup]
+nixPkgs = ["(php82.withExtensions ({ enabled, all }: enabled ++ [ all.pdo_mysql all.mbstring all.opcache ]))"]
+
 [phases.install]
 cmds = []
 
