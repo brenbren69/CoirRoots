@@ -1,7 +1,7 @@
 FROM php:8.2-cli
 
-# Install PDO MySQL and other required extensions
-RUN docker-php-ext-install pdo pdo_mysql mbstring opcache
+# Install PDO MySQL (mbstring and opcache are already in the base image)
+RUN docker-php-ext-install pdo pdo_mysql
 
 WORKDIR /app
 COPY . .
