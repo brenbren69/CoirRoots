@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F5ECD7"/>
+  <defs>
+    <pattern id="bg" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#8B6914" opacity="0.2"/>
+    </pattern>
+    <linearGradient id="blockFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A07040"/>
+      <stop offset="100%" stop-color="#7A5230"/>
+    </linearGradient>
+    <linearGradient id="blockTop2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B08040"/>
+      <stop offset="100%" stop-color="#8B6030"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" opacity="0.3"/>
+
+  <!-- Block main body -->
+  <!-- Front face -->
+  <polygon points="160,200 440,200 440,330 160,330" fill="url(#blockFront)"/>
+  <!-- Top face -->
+  <polygon points="160,200 440,200 490,155 210,155" fill="url(#blockTop2)"/>
+  <!-- Right face -->
+  <polygon points="440,200 490,155 490,285 440,330" fill="#6B4423"/>
+
+  <!-- Fiber chunks texture on front - coarse coir fiber look -->
+  <rect x="175" y="215" width="22" height="14" rx="3" fill="#6B4423" opacity="0.5"/>
+  <rect x="205" y="225" width="18" height="12" rx="3" fill="#5C3D1E" opacity="0.4"/>
+  <rect x="230" y="210" width="25" height="16" rx="3" fill="#7A5230" opacity="0.5"/>
+  <rect x="262" y="220" width="20" height="13" rx="3" fill="#6B4423" opacity="0.4"/>
+  <rect x="290" y="213" width="24" height="15" rx="3" fill="#5C3D1E" opacity="0.5"/>
+  <rect x="322" y="222" width="19" height="12" rx="3" fill="#7A5230" opacity="0.4"/>
+  <rect x="348" y="212" width="23" height="14" rx="3" fill="#6B4423" opacity="0.5"/>
+  <rect x="378" y="218" width="20" height="13" rx="3" fill="#5C3D1E" opacity="0.4"/>
+  <rect x="405" y="210" width="17" height="14" rx="3" fill="#7A5230" opacity="0.5"/>
+
+  <rect x="175" y="242" width="20" height="13" rx="3" fill="#7A5230" opacity="0.4"/>
+  <rect x="202" y="250" width="24" height="14" rx="3" fill="#6B4423" opacity="0.5"/>
+  <rect x="234" y="243" width="18" height="12" rx="3" fill="#5C3D1E" opacity="0.4"/>
+  <rect x="260" y="248" width="22" height="14" rx="3" fill="#7A5230" opacity="0.5"/>
+  <rect x="290" y="241" width="25" height="13" rx="3" fill="#6B4423" opacity="0.4"/>
+  <rect x="323" y="249" width="19" height="14" rx="3" fill="#5C3D1E" opacity="0.5"/>
+  <rect x="350" y="243" width="23" height="12" rx="3" fill="#7A5230" opacity="0.4"/>
+  <rect x="381" y="247" width="20" height="14" rx="3" fill="#6B4423" opacity="0.5"/>
+  <rect x="408" y="240" width="16" height="13" rx="3" fill="#5C3D1E" opacity="0.4"/>
+
+  <rect x="175" y="268" width="22" height="14" rx="3" fill="#6B4423" opacity="0.5"/>
+  <rect x="205" y="275" width="18" height="12" rx="3" fill="#5C3D1E" opacity="0.4"/>
+  <rect x="230" y="268" width="25" height="14" rx="3" fill="#7A5230" opacity="0.5"/>
+  <rect x="263" y="273" width="20" height="13" rx="3" fill="#6B4423" opacity="0.4"/>
+  <rect x="291" y="266" width="24" height="15" rx="3" fill="#5C3D1E" opacity="0.5"/>
+  <rect x="323" y="272" width="19" height="12" rx="3" fill="#7A5230" opacity="0.4"/>
+  <rect x="350" y="265" width="23" height="14" rx="3" fill="#6B4423" opacity="0.5"/>
+  <rect x="380" y="270" width="20" height="13" rx="3" fill="#5C3D1E" opacity="0.4"/>
+  <rect x="406" y="263" width="17" height="14" rx="3" fill="#7A5230" opacity="0.5"/>
+
+  <rect x="175" y="295" width="20" height="13" rx="3" fill="#7A5230" opacity="0.4"/>
+  <rect x="202" y="300" width="24" height="14" rx="3" fill="#6B4423" opacity="0.5"/>
+  <rect x="234" y="293" width="18" height="12" rx="3" fill="#5C3D1E" opacity="0.4"/>
+  <rect x="260" y="298" width="22" height="14" rx="3" fill="#7A5230" opacity="0.5"/>
+  <rect x="290" y="292" width="25" height="13" rx="3" fill="#6B4423" opacity="0.4"/>
+  <rect x="323" y="297" width="19" height="14" rx="3" fill="#5C3D1E" opacity="0.5"/>
+
+  <!-- Orchid/plant on top of block -->
+  <g transform="translate(300, 145)">
+    <!-- stem -->
+    <line x1="0" y1="0" x2="0" y2="-60" stroke="#4A7C3F" stroke-width="3"/>
+    <line x1="0" y1="-30" x2="-25" y2="-50" stroke="#4A7C3F" stroke-width="2"/>
+    <line x1="0" y1="-30" x2="25" y2="-50" stroke="#4A7C3F" stroke-width="2"/>
+    <!-- orchid flowers -->
+    <ellipse cx="0" cy="-68" rx="12" ry="8" fill="#D4A8E0" opacity="0.9"/>
+    <ellipse cx="-10" cy="-62" rx="10" ry="7" fill="#C490D0" opacity="0.9" transform="rotate(-30,-10,-62)"/>
+    <ellipse cx="10" cy="-62" rx="10" ry="7" fill="#B870C0" opacity="0.9" transform="rotate(30,10,-62)"/>
+    <!-- leaves -->
+    <ellipse cx="-30" cy="-54" rx="16" ry="8" fill="#4A7C3F" transform="rotate(-20,-30,-54)"/>
+    <ellipse cx="30" cy="-54" rx="15" ry="8" fill="#5C9E4A" transform="rotate(20,30,-54)"/>
+  </g>
+
+  <!-- Label -->
+  <rect x="180" y="348" width="240" height="35" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#F5ECD7" font-weight="bold">Coir Fiber Grow Block</text>
+
+  <!-- Shadow -->
+  <ellipse cx="320" cy="345" rx="155" ry="12" fill="#8B5E3C" opacity="0.12"/>
+
+  <text x="565" y="35" font-size="28" text-anchor="middle">🌿</text>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F5ECD7"/>
+  <defs>
+    <pattern id="bg" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#8B6914" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" opacity="0.3"/>
+
+  <!-- Cardboard spool core -->
+  <!-- Left disc of spool -->
+  <ellipse cx="220" cy="210" rx="22" ry="110" fill="#C8A96E"/>
+  <ellipse cx="220" cy="210" rx="17" ry="100" fill="#B8956E" opacity="0.8"/>
+  <ellipse cx="220" cy="210" rx="10" ry="55" fill="#F5ECD7" opacity="0.9"/>
+
+  <!-- Spool barrel -->
+  <rect x="220" y="110" width="160" height="200" fill="#D4B896"/>
+  <!-- Barrel texture - cardboard corrugation -->
+  <line x1="220" y1="125" x2="380" y2="125" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+  <line x1="220" y1="145" x2="380" y2="145" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+  <line x1="220" y1="165" x2="380" y2="165" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+  <line x1="220" y1="185" x2="380" y2="185" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+  <line x1="220" y1="205" x2="380" y2="205" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+  <line x1="220" y1="225" x2="380" y2="225" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+  <line x1="220" y1="245" x2="380" y2="245" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+  <line x1="220" y1="265" x2="380" y2="265" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+  <line x1="220" y1="285" x2="380" y2="285" stroke="#B89060" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Right disc of spool -->
+  <ellipse cx="380" cy="210" rx="22" ry="110" fill="#C8A96E"/>
+  <ellipse cx="380" cy="210" rx="17" ry="100" fill="#D4B880" opacity="0.8"/>
+  <ellipse cx="380" cy="210" rx="10" ry="55" fill="#F5ECD7" opacity="0.9"/>
+
+  <!-- Coir twine wound on spool (layered look) -->
+  <!-- Multiple layers of thin twine wound around -->
+  <rect x="228" y="118" width="144" height="184" fill="none"/>
+  <!-- Twine layers (build from inside out) -->
+  <rect x="230" y="120" width="140" height="180" fill="#8B5E3C" opacity="0.3"/>
+  <!-- Individual twine wraps visible -->
+  <line x1="230" y1="130" x2="370" y2="130" stroke="#8B5E3C" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="137" x2="370" y2="137" stroke="#9C6840" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="144" x2="370" y2="144" stroke="#7A5230" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="151" x2="370" y2="151" stroke="#8B5E3C" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="158" x2="370" y2="158" stroke="#9C6840" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="165" x2="370" y2="165" stroke="#7A5230" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="172" x2="370" y2="172" stroke="#8B5E3C" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="179" x2="370" y2="179" stroke="#9C6840" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="186" x2="370" y2="186" stroke="#7A5230" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="193" x2="370" y2="193" stroke="#8B5E3C" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="200" x2="370" y2="200" stroke="#9C6840" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="207" x2="370" y2="207" stroke="#7A5230" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="214" x2="370" y2="214" stroke="#8B5E3C" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="221" x2="370" y2="221" stroke="#9C6840" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="228" x2="370" y2="228" stroke="#7A5230" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="235" x2="370" y2="235" stroke="#8B5E3C" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="242" x2="370" y2="242" stroke="#9C6840" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="249" x2="370" y2="249" stroke="#7A5230" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="256" x2="370" y2="256" stroke="#8B5E3C" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="263" x2="370" y2="263" stroke="#9C6840" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="270" x2="370" y2="270" stroke="#7A5230" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="277" x2="370" y2="277" stroke="#8B5E3C" stroke-width="3" opacity="0.75"/>
+  <line x1="230" y1="284" x2="370" y2="284" stroke="#9C6840" stroke-width="3" opacity="0.8"/>
+  <line x1="230" y1="291" x2="370" y2="291" stroke="#7A5230" stroke-width="3" opacity="0.75"/>
+
+  <!-- Label on spool -->
+  <rect x="245" y="168" width="110" height="82" rx="5" fill="white" opacity="0.88"/>
+  <rect x="245" y="168" width="110" height="82" rx="5" fill="none" stroke="#8B5E3C" stroke-width="2"/>
+  <text x="300" y="186" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#5C3D1E" font-weight="bold">COIR TWINE</text>
+  <line x1="252" y1="191" x2="348" y2="191" stroke="#8B5E3C" stroke-width="1"/>
+  <text x="300" y="204" text-anchor="middle" font-family="Arial" font-size="9" fill="#7A5230">Natural Fiber</text>
+  <text x="300" y="216" text-anchor="middle" font-family="Arial" font-size="9" fill="#5C3D1E" font-weight="bold">50m</text>
+  <text x="300" y="228" text-anchor="middle" font-family="Arial" font-size="8" fill="#7A5230">2mm diameter</text>
+  <text x="300" y="241" text-anchor="middle" font-family="Arial" font-size="8" fill="#4A7C3F">Biodegradable</text>
+
+  <!-- Twine being pulled out -->
+  <path d="M395,160 Q430,140 460,135 Q490,130 510,115" stroke="#8B5E3C" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M395,160 Q430,140 460,135 Q490,130 510,115" stroke="#9C6840" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6" stroke-dasharray="8,4"/>
+  <!-- tied knot at end -->
+  <circle cx="515" cy="113" r="8" fill="none" stroke="#7A5230" stroke-width="3"/>
+  <circle cx="515" cy="113" r="4" fill="#8B5E3C"/>
+
+  <!-- Plant training use case illustration -->
+  <g transform="translate(100, 95)" opacity="0.9">
+    <rect x="-5" y="0" width="10" height="60" rx="3" fill="#6B4A2A" opacity="0.6"/>
+    <line x1="5" y1="25" x2="40" y2="30" stroke="#9C6840" stroke-width="2.5"/>
+    <line x1="5" y1="40" x2="40" y2="45" stroke="#8B5E3C" stroke-width="2.5"/>
+    <!-- plant stem -->
+    <line x1="40" y1="60" x2="40" y2="-10" stroke="#4A7C3F" stroke-width="3"/>
+    <ellipse cx="30" cy="-8" rx="14" ry="8" fill="#4A7C3F" transform="rotate(-20,30,-8)"/>
+    <ellipse cx="52" cy="-12" rx="12" ry="7" fill="#5C9E4A" transform="rotate(15,52,-12)"/>
+  </g>
+  <text x="110" y="350" text-anchor="middle" font-family="Arial" font-size="9" fill="#5C3D1E" opacity="0.6">Plant Training</text>
+
+  <!-- Label -->
+  <rect x="162" y="348" width="276" height="35" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#F5ECD7" font-weight="bold">Twisted Coir Twine (50m Roll)</text>
+
+  <!-- Shadow -->
+  <ellipse cx="300" cy="335" rx="175" ry="10" fill="#8B5E3C" opacity="0.12"/>
+
+  <text x="565" y="35" font-size="28" text-anchor="middle">🌿</text>
+</svg>

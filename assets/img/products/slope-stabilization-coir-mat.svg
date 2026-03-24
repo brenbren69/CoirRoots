@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F5ECD7"/>
+  <defs>
+    <pattern id="bg" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#8B6914" opacity="0.2"/>
+    </pattern>
+    <pattern id="matTexture" width="10" height="10" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="10" y2="0" stroke="#8B5E3C" stroke-width="2.5"/>
+      <line x1="0" y1="5" x2="10" y2="5" stroke="#7A5230" stroke-width="2"/>
+      <line x1="0" y1="10" x2="10" y2="10" stroke="#8B5E3C" stroke-width="2.5"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" opacity="0.3"/>
+
+  <!-- Slope background -->
+  <polygon points="50,370 600,370 600,120 50,370" fill="#C8A96E" opacity="0.35"/>
+  <polygon points="50,370 600,120 550,115 50,375" fill="#B89050" opacity="0.2"/>
+
+  <!-- Coir mat rolled up (left) -->
+  <g transform="translate(55, 200)">
+    <ellipse cx="30" cy="70" rx="30" ry="70" fill="#9C6840"/>
+    <!-- coil layers -->
+    <ellipse cx="30" cy="70" rx="25" ry="60" fill="#8B5E3C"/>
+    <ellipse cx="30" cy="70" rx="20" ry="50" fill="#7A5230"/>
+    <ellipse cx="30" cy="70" rx="15" ry="38" fill="#6B4423"/>
+    <ellipse cx="30" cy="70" rx="8" ry="22" fill="#5C3D1E"/>
+    <!-- horizontal fiber lines on roll -->
+    <line x1="5" y1="30" x2="55" y2="30" stroke="#A07040" stroke-width="1.5" opacity="0.4"/>
+    <line x1="3" y1="50" x2="57" y2="50" stroke="#A07040" stroke-width="1.5" opacity="0.4"/>
+    <line x1="2" y1="70" x2="58" y2="70" stroke="#A07040" stroke-width="1.5" opacity="0.4"/>
+    <line x1="3" y1="90" x2="57" y2="90" stroke="#A07040" stroke-width="1.5" opacity="0.4"/>
+    <line x1="5" y1="110" x2="55" y2="110" stroke="#A07040" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Mat unrolled on slope (main) -->
+  <!-- Heavy-duty mat with dense fiber texture -->
+  <g transform="translate(120, 100) rotate(15)">
+    <rect x="0" y="0" width="390" height="200" fill="url(#matTexture)" rx="4"/>
+    <rect x="0" y="0" width="390" height="200" fill="#9C6840" opacity="0.5" rx="4"/>
+
+    <!-- Dense horizontal fiber bundles (the distinctive look of erosion control mat) -->
+    <line x1="0" y1="15" x2="390" y2="15" stroke="#6B4A2A" stroke-width="3" opacity="0.5"/>
+    <line x1="0" y1="30" x2="390" y2="30" stroke="#7A5230" stroke-width="2.5" opacity="0.45"/>
+    <line x1="0" y1="45" x2="390" y2="45" stroke="#6B4A2A" stroke-width="3" opacity="0.5"/>
+    <line x1="0" y1="60" x2="390" y2="60" stroke="#7A5230" stroke-width="2.5" opacity="0.45"/>
+    <line x1="0" y1="75" x2="390" y2="75" stroke="#6B4A2A" stroke-width="3" opacity="0.5"/>
+    <line x1="0" y1="90" x2="390" y2="90" stroke="#7A5230" stroke-width="2.5" opacity="0.45"/>
+    <line x1="0" y1="105" x2="390" y2="105" stroke="#6B4A2A" stroke-width="3" opacity="0.5"/>
+    <line x1="0" y1="120" x2="390" y2="120" stroke="#7A5230" stroke-width="2.5" opacity="0.45"/>
+    <line x1="0" y1="135" x2="390" y2="135" stroke="#6B4A2A" stroke-width="3" opacity="0.5"/>
+    <line x1="0" y1="150" x2="390" y2="150" stroke="#7A5230" stroke-width="2.5" opacity="0.45"/>
+    <line x1="0" y1="165" x2="390" y2="165" stroke="#6B4A2A" stroke-width="3" opacity="0.5"/>
+    <line x1="0" y1="180" x2="390" y2="180" stroke="#7A5230" stroke-width="2.5" opacity="0.45"/>
+    <line x1="0" y1="195" x2="390" y2="195" stroke="#6B4A2A" stroke-width="3" opacity="0.5"/>
+
+    <!-- Vertical stitch lines (jute yarn) -->
+    <line x1="50" y1="0" x2="50" y2="200" stroke="#8B6914" stroke-width="2" opacity="0.4" stroke-dasharray="8,7"/>
+    <line x1="130" y1="0" x2="130" y2="200" stroke="#8B6914" stroke-width="2" opacity="0.4" stroke-dasharray="8,7"/>
+    <line x1="210" y1="0" x2="210" y2="200" stroke="#8B6914" stroke-width="2" opacity="0.4" stroke-dasharray="8,7"/>
+    <line x1="290" y1="0" x2="290" y2="200" stroke="#8B6914" stroke-width="2" opacity="0.4" stroke-dasharray="8,7"/>
+    <line x1="370" y1="0" x2="370" y2="200" stroke="#8B6914" stroke-width="2" opacity="0.4" stroke-dasharray="8,7"/>
+
+    <!-- Stakes at corners -->
+    <rect x="-4" y="-15" width="8" height="30" rx="2" fill="#5C3D1E"/>
+    <polygon points="0,-15 -6,-30 6,-30" fill="#5C3D1E"/>
+    <rect x="383" y="-15" width="8" height="30" rx="2" fill="#5C3D1E"/>
+    <polygon points="387,-15 381,-30 393,-30" fill="#5C3D1E"/>
+
+    <!-- Vegetation sprouting through -->
+    <ellipse cx="100" cy="80" rx="18" ry="11" fill="#4A7C3F" transform="rotate(-20,100,80)" opacity="0.9"/>
+    <ellipse cx="230" cy="50" rx="16" ry="10" fill="#5C9E4A" transform="rotate(10,230,50)" opacity="0.9"/>
+    <ellipse cx="320" cy="140" rx="17" ry="10" fill="#3D6B33" transform="rotate(-15,320,140)" opacity="0.9"/>
+    <ellipse cx="170" cy="160" rx="14" ry="9" fill="#4A7C3F" transform="rotate(20,170,160)" opacity="0.9"/>
+  </g>
+
+  <!-- Spec badge -->
+  <rect x="440" y="50" width="140" height="70" rx="8" fill="#4A7C3F" opacity="0.9"/>
+  <text x="510" y="74" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">400 g/m²</text>
+  <text x="510" y="92" text-anchor="middle" font-family="Arial" font-size="10" fill="#F5ECD7">1.2m × 2.5m</text>
+  <text x="510" y="108" text-anchor="middle" font-family="Arial" font-size="9" fill="#F5ECD7">Biodegradable</text>
+
+  <!-- Label -->
+  <rect x="155" y="350" width="290" height="35" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="372" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#F5ECD7" font-weight="bold">Slope Stabilization Coir Mat</text>
+
+  <text x="565" y="35" font-size="28" text-anchor="middle">🌿</text>
+</svg>

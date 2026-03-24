@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F5ECD7"/>
+  <defs>
+    <pattern id="bg" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#8B6914" opacity="0.2"/>
+    </pattern>
+    <linearGradient id="blockTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6B4423"/>
+      <stop offset="50%" stop-color="#8B5E3C"/>
+      <stop offset="100%" stop-color="#7A5230"/>
+    </linearGradient>
+    <linearGradient id="blockFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9C6840"/>
+      <stop offset="100%" stop-color="#7A5230"/>
+    </linearGradient>
+    <linearGradient id="blockSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A5230"/>
+      <stop offset="100%" stop-color="#5C3D1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" opacity="0.3"/>
+
+  <!-- Main block isometric view -->
+  <!-- Front face -->
+  <polygon points="150,180 450,180 450,310 150,310" fill="url(#blockFront)"/>
+  <!-- Top face -->
+  <polygon points="150,180 450,180 510,130 210,130" fill="url(#blockTop)"/>
+  <!-- Right side face -->
+  <polygon points="450,180 510,130 510,260 450,310" fill="url(#blockSide)"/>
+
+  <!-- Fiber texture on front -->
+  <line x1="150" y1="210" x2="450" y2="210" stroke="#6B4A2A" stroke-width="1.2" opacity="0.5"/>
+  <line x1="150" y1="240" x2="450" y2="240" stroke="#6B4A2A" stroke-width="1.2" opacity="0.5"/>
+  <line x1="150" y1="270" x2="450" y2="270" stroke="#6B4A2A" stroke-width="1.2" opacity="0.5"/>
+  <line x1="150" y1="300" x2="450" y2="300" stroke="#6B4A2A" stroke-width="1.2" opacity="0.4"/>
+  <line x1="210" y1="180" x2="210" y2="310" stroke="#6B4A2A" stroke-width="1.2" opacity="0.4"/>
+  <line x1="280" y1="180" x2="280" y2="310" stroke="#6B4A2A" stroke-width="1.2" opacity="0.4"/>
+  <line x1="350" y1="180" x2="350" y2="310" stroke="#6B4A2A" stroke-width="1.2" opacity="0.4"/>
+  <line x1="420" y1="180" x2="420" y2="310" stroke="#6B4A2A" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Fiber texture on top -->
+  <line x1="150" y1="155" x2="480" y2="155" stroke="#9C7240" stroke-width="1" opacity="0.5" transform="skewX(-25)"/>
+  <line x1="150" y1="168" x2="480" y2="168" stroke="#9C7240" stroke-width="1" opacity="0.5" transform="skewX(-25)"/>
+
+  <!-- Label on front -->
+  <rect x="180" y="200" width="240" height="80" rx="4" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="228" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#F5ECD7" font-weight="bold">COCO PEAT</text>
+  <text x="300" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#F5DEB3">COMPRESSED BLOCK</text>
+  <line x1="195" y1="255" x2="405" y2="255" stroke="#8B6914" stroke-width="1"/>
+  <text x="300" y="272" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#8B6914" font-weight="bold">5 kg</text>
+
+  <!-- Water droplets showing expansion -->
+  <g transform="translate(490, 180)">
+    <text font-size="22" x="0" y="0" fill="#4A7C3F">💧</text>
+    <text x="-5" y="25" font-family="Arial" font-size="9" fill="#5C3D1E" text-anchor="middle">+H₂O</text>
+    <text x="-5" y="38" font-family="Arial" font-size="9" fill="#5C3D1E" text-anchor="middle">→ 70L</text>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="310" cy="330" rx="170" ry="18" fill="#8B5E3C" opacity="0.15"/>
+
+  <!-- Bottom label -->
+  <rect x="185" y="348" width="230" height="35" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#F5ECD7" font-weight="bold">Premium Coco Peat Block</text>
+
+  <text x="565" y="35" font-size="28" text-anchor="middle">🌿</text>
+</svg>

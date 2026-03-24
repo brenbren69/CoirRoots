@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F5ECD7"/>
+  <defs>
+    <pattern id="bg" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#8B6914" opacity="0.2"/>
+    </pattern>
+    <linearGradient id="rollBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6B4423"/>
+      <stop offset="30%" stop-color="#9C6840"/>
+      <stop offset="70%" stop-color="#8B5E3C"/>
+      <stop offset="100%" stop-color="#6B4423"/>
+    </linearGradient>
+    <linearGradient id="rollEnd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B08040"/>
+      <stop offset="50%" stop-color="#9C6840"/>
+      <stop offset="100%" stop-color="#7A5230"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" opacity="0.3"/>
+
+  <!-- Main geotextile roll - horizontal lying -->
+  <!-- Roll body (long cylinder) -->
+  <rect x="100" y="140" width="380" height="140" fill="url(#rollBody)" rx="10"/>
+
+  <!-- Fiber texture on roll body -->
+  <line x1="100" y1="160" x2="480" y2="160" stroke="#6B4A2A" stroke-width="2" opacity="0.35"/>
+  <line x1="100" y1="180" x2="480" y2="180" stroke="#7A5230" stroke-width="1.5" opacity="0.3"/>
+  <line x1="100" y1="200" x2="480" y2="200" stroke="#6B4A2A" stroke-width="2" opacity="0.35"/>
+  <line x1="100" y1="220" x2="480" y2="220" stroke="#7A5230" stroke-width="1.5" opacity="0.3"/>
+  <line x1="100" y1="240" x2="480" y2="240" stroke="#6B4A2A" stroke-width="2" opacity="0.35"/>
+  <line x1="100" y1="260" x2="480" y2="260" stroke="#7A5230" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Woven pattern lines (vertical) -->
+  <line x1="150" y1="140" x2="150" y2="280" stroke="#5C3D1E" stroke-width="1.5" opacity="0.25"/>
+  <line x1="200" y1="140" x2="200" y2="280" stroke="#5C3D1E" stroke-width="1.5" opacity="0.25"/>
+  <line x1="250" y1="140" x2="250" y2="280" stroke="#5C3D1E" stroke-width="1.5" opacity="0.25"/>
+  <line x1="300" y1="140" x2="300" y2="280" stroke="#5C3D1E" stroke-width="1.5" opacity="0.25"/>
+  <line x1="350" y1="140" x2="350" y2="280" stroke="#5C3D1E" stroke-width="1.5" opacity="0.25"/>
+  <line x1="400" y1="140" x2="400" y2="280" stroke="#5C3D1E" stroke-width="1.5" opacity="0.25"/>
+  <line x1="450" y1="140" x2="450" y2="280" stroke="#5C3D1E" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Left circular end cap -->
+  <ellipse cx="100" cy="210" rx="16" ry="70" fill="url(#rollEnd)"/>
+  <!-- Spiral/coil layers on end -->
+  <ellipse cx="100" cy="210" rx="14" ry="62" fill="none" stroke="#8B5E3C" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="100" cy="210" rx="11" ry="52" fill="none" stroke="#7A5230" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="100" cy="210" rx="8" ry="40" fill="none" stroke="#6B4423" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="100" cy="210" rx="5" ry="26" fill="none" stroke="#5C3D1E" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="100" cy="210" rx="2" ry="10" fill="#4A3020"/>
+
+  <!-- Right circular end cap -->
+  <ellipse cx="480" cy="210" rx="16" ry="70" fill="url(#rollEnd)"/>
+  <ellipse cx="480" cy="210" rx="14" ry="62" fill="none" stroke="#8B5E3C" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="480" cy="210" rx="11" ry="52" fill="none" stroke="#7A5230" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="480" cy="210" rx="8" ry="40" fill="none" stroke="#6B4423" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="480" cy="210" rx="5" ry="26" fill="none" stroke="#5C3D1E" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="480" cy="210" rx="2" ry="10" fill="#4A3020"/>
+
+  <!-- Label wrap on roll -->
+  <rect x="220" y="168" width="160" height="80" rx="5" fill="#4A7C3F" opacity="0.92"/>
+  <text x="300" y="193" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="white" font-weight="bold">COIR GEOTEXTILE</text>
+  <line x1="228" y1="200" x2="372" y2="200" stroke="#F5ECD7" stroke-width="1" opacity="0.5"/>
+  <text x="300" y="217" text-anchor="middle" font-family="Arial" font-size="10" fill="#F5ECD7">1m × 10m Roll</text>
+  <text x="300" y="233" text-anchor="middle" font-family="Arial" font-size="10" fill="#F5DEB3">4.0 kN/m strength</text>
+
+  <!-- Measurement arrows -->
+  <line x1="100" y1="300" x2="480" y2="300" stroke="#5C3D1E" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="290" y="318" text-anchor="middle" font-family="Arial" font-size="11" fill="#5C3D1E" font-style="italic">10 meters length</text>
+  <line x1="510" y1="140" x2="510" y2="280" stroke="#5C3D1E" stroke-width="1.5"/>
+  <text x="535" y="215" text-anchor="middle" font-family="Arial" font-size="11" fill="#5C3D1E" font-style="italic" transform="rotate(90,535,215)">1m wide</text>
+
+  <!-- Label -->
+  <rect x="150" y="348" width="300" height="35" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#F5ECD7" font-weight="bold">Coir Geotextile Roll (1m × 10m)</text>
+
+  <!-- Shadow -->
+  <ellipse cx="290" cy="290" rx="195" ry="10" fill="#8B5E3C" opacity="0.12"/>
+
+  <text x="565" y="35" font-size="28" text-anchor="middle">🌿</text>
+</svg>

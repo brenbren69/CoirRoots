@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F5ECD7"/>
+  <defs>
+    <pattern id="bg" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#8B6914" opacity="0.2"/>
+    </pattern>
+    <linearGradient id="boxFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9C6840"/>
+      <stop offset="100%" stop-color="#7A5230"/>
+    </linearGradient>
+    <linearGradient id="boxTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B08040"/>
+      <stop offset="100%" stop-color="#8B6030"/>
+    </linearGradient>
+    <linearGradient id="boxSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A5230"/>
+      <stop offset="100%" stop-color="#5C3D1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" opacity="0.3"/>
+
+  <!-- Steel frame legs visible -->
+  <rect x="155" y="295" width="8" height="35" fill="#7A7A7A"/>
+  <rect x="437" y="295" width="8" height="35" fill="#6A6A6A"/>
+  <rect x="175" y="310" width="8" height="20" fill="#7A7A7A" opacity="0.7"/>
+  <rect x="417" y="310" width="8" height="20" fill="#6A6A6A" opacity="0.7"/>
+
+  <!-- Box body - isometric-ish perspective -->
+  <!-- Front face -->
+  <rect x="150" y="170" width="300" height="130" fill="url(#boxFront)"/>
+  <!-- Top face -->
+  <polygon points="150,170 450,170 500,130 200,130" fill="url(#boxTop)"/>
+  <!-- Right side face -->
+  <polygon points="450,170 500,130 500,260 450,300" fill="url(#boxSide)"/>
+  <!-- Bottom front edge -->
+  <rect x="150" y="295" width="300" height="8" rx="2" fill="#5C3D1E"/>
+
+  <!-- Steel corner brackets (galvanized) -->
+  <rect x="148" y="168" width="12" height="130" rx="2" fill="#9A9A9A" opacity="0.7"/>
+  <rect x="440" y="168" width="12" height="130" rx="2" fill="#8A8A8A" opacity="0.7"/>
+  <rect x="148" y="168" width="302" height="10" rx="2" fill="#B0B0B0" opacity="0.6"/>
+  <rect x="148" y="291" width="302" height="10" rx="2" fill="#9A9A9A" opacity="0.6"/>
+
+  <!-- Coir fiber texture on front panel -->
+  <line x1="162" y1="195" x2="440" y2="195" stroke="#6B4A2A" stroke-width="1.5" opacity="0.4"/>
+  <line x1="162" y1="220" x2="440" y2="220" stroke="#6B4A2A" stroke-width="1.5" opacity="0.4"/>
+  <line x1="162" y1="245" x2="440" y2="245" stroke="#6B4A2A" stroke-width="1.5" opacity="0.4"/>
+  <line x1="162" y1="270" x2="440" y2="270" stroke="#6B4A2A" stroke-width="1.5" opacity="0.4"/>
+  <line x1="230" y1="178" x2="230" y2="298" stroke="#6B4A2A" stroke-width="1.5" opacity="0.3"/>
+  <line x1="300" y1="178" x2="300" y2="298" stroke="#6B4A2A" stroke-width="1.5" opacity="0.3"/>
+  <line x1="370" y1="178" x2="370" y2="298" stroke="#6B4A2A" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Coco peat growing medium visible on top -->
+  <polygon points="155,170 445,170 494,130 204,130" fill="#8B5E3C" opacity="0.6"/>
+  <!-- Soil texture -->
+  <polygon points="160,168 440,168 487,132 207,132" fill="#7A5230" opacity="0.4"/>
+
+  <!-- Plants growing from box -->
+  <!-- Plant 1 -->
+  <g transform="translate(230, 130)">
+    <line x1="0" y1="0" x2="-10" y2="-60" stroke="#4A7C3F" stroke-width="3"/>
+    <ellipse cx="-18" cy="-55" rx="20" ry="12" fill="#4A7C3F" transform="rotate(-25,-18,-55)"/>
+    <ellipse cx="-5" cy="-70" rx="17" ry="10" fill="#5C9E4A" transform="rotate(10,-5,-70)"/>
+    <ellipse cx="-25" cy="-75" rx="15" ry="9" fill="#3D6B33" transform="rotate(-15,-25,-75)"/>
+  </g>
+  <!-- Plant 2 (herbs) -->
+  <g transform="translate(320, 130)">
+    <line x1="0" y1="0" x2="5" y2="-50" stroke="#4A7C3F" stroke-width="3"/>
+    <ellipse cx="12" cy="-46" rx="18" ry="11" fill="#5C9E4A" transform="rotate(20,12,-46)"/>
+    <ellipse cx="-5" cy="-55" rx="15" ry="9" fill="#4A7C3F" transform="rotate(-20,-5,-55)"/>
+    <ellipse cx="8" cy="-65" rx="13" ry="8" fill="#3D6B33"/>
+    <!-- small flowers -->
+    <circle cx="15" cy="-40" r="5" fill="#FFF176" opacity="0.9"/>
+    <circle cx="-8" cy="-50" r="4" fill="#FFF176" opacity="0.9"/>
+  </g>
+  <!-- Plant 3 -->
+  <g transform="translate(400, 130)">
+    <line x1="0" y1="0" x2="8" y2="-45" stroke="#4A7C3F" stroke-width="2.5"/>
+    <ellipse cx="15" cy="-42" rx="16" ry="10" fill="#4A7C3F" transform="rotate(15,15,-42)"/>
+    <ellipse cx="2" cy="-52" rx="14" ry="9" fill="#5C9E4A" transform="rotate(-10,2,-52)"/>
+  </g>
+
+  <!-- Dimensions -->
+  <text x="300" y="365" text-anchor="middle" font-family="Arial" font-size="11" fill="#5C3D1E" opacity="0.65">60cm × 30cm × 25cm</text>
+
+  <!-- Label -->
+  <rect x="168" y="348" width="264" height="35" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#F5ECD7" font-weight="bold">Coir Planter Box (Large)</text>
+
+  <!-- Shadow -->
+  <ellipse cx="310" cy="338" rx="165" ry="10" fill="#8B5E3C" opacity="0.12"/>
+
+  <text x="565" y="35" font-size="28" text-anchor="middle">🌿</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F5ECD7"/>
+  <!-- Background subtle texture -->
+  <rect width="600" height="400" fill="url(#bg)" opacity="0.3"/>
+  <defs>
+    <pattern id="bg" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#8B6914" opacity="0.2"/>
+    </pattern>
+  </defs>
+
+  <!-- Pot 1 (back left) -->
+  <g transform="translate(80, 180)">
+    <ellipse cx="50" cy="10" rx="42" ry="10" fill="#7A5230"/>
+    <path d="M8,10 Q0,80 15,110 Q50,125 85,110 Q100,80 92,10 Z" fill="#8B5E3C"/>
+    <!-- fiber texture lines -->
+    <path d="M20,30 Q50,25 80,30" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M15,50 Q50,44 85,50" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M12,70 Q50,63 88,70" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M14,90 Q50,84 86,90" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <ellipse cx="50" cy="10" rx="42" ry="10" fill="#A06B3C" opacity="0.7"/>
+    <!-- rim -->
+    <ellipse cx="50" cy="10" rx="42" ry="10" fill="none" stroke="#5C3D1E" stroke-width="2"/>
+  </g>
+
+  <!-- Pot 2 (back center) -->
+  <g transform="translate(190, 160)">
+    <ellipse cx="55" cy="10" rx="46" ry="11" fill="#7A5230"/>
+    <path d="M9,10 Q0,85 17,118 Q55,134 93,118 Q110,85 101,10 Z" fill="#9C6840"/>
+    <path d="M22,32 Q55,26 88,32" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M17,55 Q55,48 93,55" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M13,78 Q55,70 97,78" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M15,100 Q55,93 95,100" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <ellipse cx="55" cy="10" rx="46" ry="11" fill="#B07844" opacity="0.6"/>
+    <ellipse cx="55" cy="10" rx="46" ry="11" fill="none" stroke="#5C3D1E" stroke-width="2"/>
+    <!-- small seedling in this pot -->
+    <line x1="55" y1="-10" x2="55" y2="-50" stroke="#4A7C3F" stroke-width="3"/>
+    <ellipse cx="45" cy="-45" rx="12" ry="7" fill="#4A7C3F" transform="rotate(-30,45,-45)"/>
+    <ellipse cx="65" cy="-48" rx="10" ry="6" fill="#5C9E4A" transform="rotate(20,65,-48)"/>
+  </g>
+
+  <!-- Pot 3 (front left) -->
+  <g transform="translate(140, 230)">
+    <ellipse cx="48" cy="10" rx="40" ry="9" fill="#7A5230"/>
+    <path d="M8,10 Q0,75 14,104 Q48,118 82,104 Q96,75 88,10 Z" fill="#8B5E3C"/>
+    <path d="M19,28 Q48,22 77,28" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M14,48 Q48,42 82,48" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M11,68 Q48,62 85,68" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M13,88 Q48,82 83,88" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <ellipse cx="48" cy="10" rx="40" ry="9" fill="#A06B3C" opacity="0.6"/>
+    <ellipse cx="48" cy="10" rx="40" ry="9" fill="none" stroke="#5C3D1E" stroke-width="2"/>
+  </g>
+
+  <!-- Pot 4 (front center) -->
+  <g transform="translate(310, 220)">
+    <ellipse cx="50" cy="10" rx="42" ry="10" fill="#7A5230"/>
+    <path d="M8,10 Q0,80 15,110 Q50,125 85,110 Q100,80 92,10 Z" fill="#9C6840"/>
+    <path d="M20,30 Q50,25 80,30" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M15,50 Q50,44 85,50" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M12,70 Q50,63 88,70" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M14,90 Q50,84 86,90" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <ellipse cx="50" cy="10" rx="42" ry="10" fill="#A06B3C" opacity="0.6"/>
+    <ellipse cx="50" cy="10" rx="42" ry="10" fill="none" stroke="#5C3D1E" stroke-width="2"/>
+    <!-- tiny sprout -->
+    <line x1="50" y1="-5" x2="50" y2="-30" stroke="#4A7C3F" stroke-width="2.5"/>
+    <ellipse cx="42" cy="-27" rx="9" ry="5" fill="#4A7C3F" transform="rotate(-20,42,-27)"/>
+    <ellipse cx="58" cy="-30" rx="8" ry="5" fill="#5C9E4A" transform="rotate(15,58,-30)"/>
+  </g>
+
+  <!-- Pot 5 (front right) -->
+  <g transform="translate(430, 200)">
+    <ellipse cx="52" cy="10" rx="44" ry="10" fill="#7A5230"/>
+    <path d="M8,10 Q0,82 16,114 Q52,128 88,114 Q104,82 96,10 Z" fill="#8B5E3C"/>
+    <path d="M20,31 Q52,25 84,31" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M15,52 Q52,46 89,52" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M12,73 Q52,66 92,73" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M14,94 Q52,87 90,94" stroke="#6B4A2A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <ellipse cx="52" cy="10" rx="44" ry="10" fill="#B07844" opacity="0.6"/>
+    <ellipse cx="52" cy="10" rx="44" ry="10" fill="none" stroke="#5C3D1E" stroke-width="2"/>
+  </g>
+
+  <!-- Label -->
+  <rect x="170" y="345" width="260" height="38" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="369" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#F5ECD7" font-weight="bold">Coir Pots — Set of 5</text>
+
+  <!-- eco leaf icon top right -->
+  <text x="565" y="35" font-size="28" text-anchor="middle">🌿</text>
+</svg>

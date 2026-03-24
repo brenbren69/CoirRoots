@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F5ECD7"/>
+  <defs>
+    <pattern id="bg" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#8B6914" opacity="0.2"/>
+    </pattern>
+    <radialGradient id="coilGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A07040"/>
+      <stop offset="70%" stop-color="#8B5E3C"/>
+      <stop offset="100%" stop-color="#6B4423"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" opacity="0.3"/>
+
+  <!-- Main rope coil (circular coil lying flat) -->
+  <!-- Outer coil rings - simulating wound rope -->
+  <!-- Coil shadow -->
+  <ellipse cx="300" cy="220" rx="165" ry="50" fill="#8B5E3C" opacity="0.15" transform="translate(5,8)"/>
+
+  <!-- Multiple rope strands making up coil -->
+  <!-- Outermost ring -->
+  <ellipse cx="300" cy="210" rx="160" ry="78" fill="none" stroke="#8B5E3C" stroke-width="12" opacity="0.9"/>
+  <ellipse cx="300" cy="210" rx="160" ry="78" fill="none" stroke="#9C6840" stroke-width="8" opacity="0.6"/>
+  <ellipse cx="300" cy="210" rx="160" ry="78" fill="none" stroke="#7A5230" stroke-width="4" opacity="0.4" stroke-dasharray="18,6"/>
+
+  <!-- Second ring -->
+  <ellipse cx="300" cy="210" rx="140" ry="67" fill="none" stroke="#7A5230" stroke-width="12" opacity="0.85"/>
+  <ellipse cx="300" cy="210" rx="140" ry="67" fill="none" stroke="#8B5E3C" stroke-width="8" opacity="0.55"/>
+  <ellipse cx="300" cy="210" rx="140" ry="67" fill="none" stroke="#9C6840" stroke-width="4" opacity="0.35" stroke-dasharray="16,6"/>
+
+  <!-- Third ring -->
+  <ellipse cx="300" cy="210" rx="120" ry="56" fill="none" stroke="#9C6840" stroke-width="12" opacity="0.8"/>
+  <ellipse cx="300" cy="210" rx="120" ry="56" fill="none" stroke="#7A5230" stroke-width="8" opacity="0.5"/>
+  <ellipse cx="300" cy="210" rx="120" ry="56" fill="none" stroke="#8B5E3C" stroke-width="4" opacity="0.35" stroke-dasharray="14,6"/>
+
+  <!-- Fourth ring -->
+  <ellipse cx="300" cy="210" rx="100" ry="46" fill="none" stroke="#8B5E3C" stroke-width="12" opacity="0.75"/>
+  <ellipse cx="300" cy="210" rx="100" ry="46" fill="none" stroke="#9C6840" stroke-width="8" opacity="0.45"/>
+  <ellipse cx="300" cy="210" rx="100" ry="46" fill="none" stroke="#7A5230" stroke-width="4" opacity="0.3" stroke-dasharray="12,5"/>
+
+  <!-- Fifth ring -->
+  <ellipse cx="300" cy="210" rx="80" ry="36" fill="none" stroke="#7A5230" stroke-width="10" opacity="0.7"/>
+  <ellipse cx="300" cy="210" rx="80" ry="36" fill="none" stroke="#8B5E3C" stroke-width="6" opacity="0.4"/>
+
+  <!-- Sixth ring -->
+  <ellipse cx="300" cy="210" rx="60" ry="27" fill="none" stroke="#9C6840" stroke-width="10" opacity="0.7"/>
+  <ellipse cx="300" cy="210" rx="60" ry="27" fill="none" stroke="#7A5230" stroke-width="6" opacity="0.4"/>
+
+  <!-- Inner rings -->
+  <ellipse cx="300" cy="210" rx="42" ry="19" fill="none" stroke="#8B5E3C" stroke-width="9" opacity="0.65"/>
+  <ellipse cx="300" cy="210" rx="26" ry="12" fill="none" stroke="#7A5230" stroke-width="8" opacity="0.65"/>
+  <ellipse cx="300" cy="210" rx="12" ry="6" fill="#9C6840"/>
+
+  <!-- Rope tail coming out of coil -->
+  <path d="M460,132 Q500,100 530,95 Q560,90 565,105 Q570,120 545,125 Q520,130 510,150" stroke="#8B5E3C" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M460,132 Q500,100 530,95 Q560,90 565,105 Q570,120 545,125 Q520,130 510,150" stroke="#9C6840" stroke-width="7" fill="none" stroke-linecap="round" stroke-dasharray="20,8"/>
+  <!-- Rope twist detail on tail -->
+  <path d="M475,126 Q492,113 505,110" stroke="#6B4423" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M490,119 Q507,106 520,103" stroke="#6B4423" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M505,115 Q522,105 535,102" stroke="#6B4423" stroke-width="3" fill="none" opacity="0.5"/>
+
+  <!-- Twisted rope detail callout (zoomed) -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="0" width="120" height="85" rx="8" fill="white" opacity="0.8" stroke="#8B5E3C" stroke-width="2"/>
+    <text x="60" y="18" text-anchor="middle" font-family="Arial" font-size="9" fill="#5C3D1E" font-weight="bold">3-Strand Twist</text>
+    <!-- Simple rope cross-section -->
+    <g transform="translate(20, 28)">
+      <path d="M0,30 Q5,15 10,30 Q15,45 20,30 Q25,15 30,30 Q35,45 40,30 Q45,15 50,30 Q55,45 60,30 Q65,15 70,30 Q75,45 80,30" stroke="#8B5E3C" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M0,30 Q5,15 10,30 Q15,45 20,30 Q25,15 30,30 Q35,45 40,30 Q45,15 50,30 Q55,45 60,30 Q65,15 70,30 Q75,45 80,30" stroke="#9C6840" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M5,22 Q12,12 19,22 M25,18 Q32,8 39,18 M45,22 Q52,12 59,22 M65,18 Q72,8 79,18" stroke="#6B4A2A" stroke-width="2" fill="none" opacity="0.5"/>
+    </g>
+    <text x="60" y="78" text-anchor="middle" font-family="Arial" font-size="8" fill="#5C3D1E">5mm diameter</text>
+  </g>
+
+  <!-- Spec labels -->
+  <rect x="420" y="270" width="150" height="65" rx="8" fill="#4A7C3F" opacity="0.9"/>
+  <text x="495" y="292" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">5mm × 10m</text>
+  <text x="495" y="308" text-anchor="middle" font-family="Arial" font-size="9" fill="#F5ECD7">~60kg break load</text>
+  <text x="495" y="322" text-anchor="middle" font-family="Arial" font-size="9" fill="#F5ECD7">100% Natural</text>
+  <text x="495" y="328" text-anchor="middle" font-family="Arial" font-size="8" fill="#F5DEB3">Chemical-free</text>
+
+  <!-- Label -->
+  <rect x="155" y="350" width="290" height="35" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="300" y="372" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#F5ECD7" font-weight="bold">Natural Coir Rope (5mm × 10m)</text>
+
+  <text x="565" y="35" font-size="28" text-anchor="middle">🌿</text>
+</svg>
