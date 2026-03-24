@@ -49,6 +49,10 @@ if (!function_exists('coir_env')) {
     {
         coir_env_load();
 
-        return $_ENV[$key] ?? $_SERVER[$key] ?? $default;
+        // $_ENV may be empty in PHP built-in server / Docker — use getenv() as reliable fallback
+        if (isset($_ENV[$key])) return $_ENV[$key];
+        $val = getenv($key);
+        if ($val !== false) return $val;
+        return $default;
     }
 }
